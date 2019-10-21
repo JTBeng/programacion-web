@@ -3,19 +3,27 @@ article
 	border-radius: 5px;
 	height: 50px;
 	margin-top: 10px;
-	width: 150px;
 	text-align: center;
-	
+	width: 150px;	
 }
+
 #uno
 {
 	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
 	/*Se utila la tecnica de rgba y es de arriba a abajo, empezando por el primer color*/
+	/*Se pueden combinar los diferentes tipos de poner esto: background:linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1),blue);*/
 	background: -o-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*Ponemos predeterminados para cada navegador este es Opera*/
 	background: -moz-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*firefox*/
 	background: -ms-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*microsoft*/
 	background: -webkit-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*Safari*/
     background: linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));
+}
+
+.texto
+{	
+	position: relative;
+	top: 15px;
+
 }
 #dos
 {
@@ -51,7 +59,7 @@ article
 #cinco
 {
 	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
-	/*El to left indica que termina a la izquierda y toma los colores en el orden seleccionado*/
+	/*El to leftbottom indica que termina a la izquierda y abajo(en diagonal) y toma los colores en el orden seleccionado*/
 	background: -o-linear-gradient(to left bottom, red,yellow);/*Ponemos predeterminados para cada navegador Opera*/
 	background: -moz-linear-gradient(to left bottom, red,yellow);/*firefox*/
 	background: -ms-linear-gradient(to left bottom, red,yellow);/*microsoft*/
@@ -71,15 +79,15 @@ article
 {
 	/*de 90 grados*/
 	background: red;
-	background: -o-linear-gradient(to left bottom, red,yellow,blue);/*Ponemos predeterminados para cada navegador Opera*/
-	background: -moz-linear-gradient(to left bottom, red,yellow,blue);/*firefox*/
-	background: -ms-linear-gradient(to left bottom, red,yellow,blue);/*microsoft*/
-	background: -webkit-linear-gradient(to left bottom, red,yellow,blue);/*Safari*/
-    background: linear-gradient(to left bottom, red,yellow,blue);
+	background: -o-linear-gradient(90deg, red,yellow,blue);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(90deg, red,yellow,blue);/*firefox*/
+	background: -ms-linear-gradient(90deg, red,yellow,blue);/*microsoft*/
+	background: -webkit-linear-gradient(90deg, red,yellow,blue);/*Safari*/
+    background: linear-gradient(90deg, red,yellow,blue);
 }
-.texto
-{	
-	position: relative;
-	top: 15px;
-
+#siete{
+	/*Si no soporta gradientes*/
+	background: red;
+	/*Todos*/
+	background: repeating-linear-gradient(45deg,black,white,black 20%)	
 }
