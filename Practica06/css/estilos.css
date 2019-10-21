@@ -1,0 +1,109 @@
+/*Los selectores avanzados nos permiten otras etiquetas que nos dan más accesibilidad como:*/
+img[alt]/*Le damos el sig formato a todas las imagenes que tengan alt*/
+{
+	
+	border:5px solid blue;
+}
+img[src="img/alien.jpg"]/*Le damos el sig formato a la imagen con esta ruta */
+{
+	
+	width: 400px;
+}
+img[src^="img/"]/*buscara una cadena que empiece con esa subcadena */
+{
+	
+	width: 150px;
+}
+img[src$="jpg"]/*buscara una cadena que termine con esa subcadena */
+{
+	width: 250px;
+}
+img[src*="alien"]/*buscara una cadena que contenga en cualquier lugar esa subcadena */
+{
+	width: 500px;
+}
+
+
+
+/*Es la manera correcta de llamar a las classes en vez de
+como lo habiamos visto pero es lo mismo*/
+article[class~="resaltado"]/*equivalente a .resaltado*/
+{
+	border:1px dashed blue;
+}
+article[class~="ingles"]/*equivalente a .ingles*/
+{
+	border:1px dashed blue;
+}
+article[class~="archivo"]/*equivalente a .archivo*/
+{
+	border:1px dashed blue;
+}
+article[class|="ingles"]/*Lo toma como uno separado por espacios cuando tienes guiones*/
+{
+	text-align: center;
+}
+div > p /*toma los p que esten directamente dentro de div
+ignorando los indirectos como el p en el article*/
+{
+	color: blue;
+}
+/*Este toma todos los que esten dentro aun que esten dentro
+otro selector
+div p 
+{
+	color: blue;
+}
+*/
+
+
+
+h2+p/*Toma la primera p despues del h2*/
+{
+	color:gray;
+}
+h2~p/*Todas las p despues de h2*/
+{
+	color:green;
+}
+#resumen,#experimento,#pruebas,#resultados,#conclusiones
+/*Toma todos los ids mencionados*/
+{
+	color:red;
+}
+section:not(#referencias)
+/*Toma todos los id menos el mencionado*/
+{
+	color:yellow;
+}
+li:nth-child(odd)/*Toma todos los impares
+"nth:el elemento n" "odd:impares"*/
+{
+color:green;
+}
+li:nth-child(even)/*Toma todos los pares
+"nth:el elemento n" "even:pares"*/
+{
+color:blue;
+}
+li:nth-child(5)/*Toma el quinto elemento 
+"nth:el elemento n" "even:pares"*/
+{
+color:red;
+}
+li:nth-last-child(1)/*Toma el ultimo elemento elemento 
+"nth:el elemento n" "even:pares" "last:De abajo hacia arriba"*/
+{
+color:purple;
+}
+li:nth-last-child(2)/*Toma el penultimo elemento elemento 
+"nth:el elemento n" "even:pares" "last:De abajo hacia arriba"*/
+{
+color:yellow;
+}
+p:first-line/*solo toma la primera linea del parafo*/
+{
+	color:red;
+	font-weight: bold;
+}
+
