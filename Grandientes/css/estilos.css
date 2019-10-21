@@ -1,0 +1,85 @@
+article
+{
+	border-radius: 5px;
+	height: 50px;
+	margin-top: 10px;
+	width: 150px;
+	text-align: center;
+	
+}
+#uno
+{
+	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
+	/*Se utila la tecnica de rgba y es de arriba a abajo, empezando por el primer color*/
+	background: -o-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*Ponemos predeterminados para cada navegador este es Opera*/
+	background: -moz-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*firefox*/
+	background: -ms-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*microsoft*/
+	background: -webkit-linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));/*Safari*/
+    background: linear-gradient(rgba(255,0,0,1),rgba(255,255,0,1));
+}
+#dos
+{
+	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
+	/*El to left indica que termina a la izquierda y toma los colores en el orden seleccionado*/
+	background: -o-linear-gradient(to left, red,yellow);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(to left, red,yellow);/*firefox*/
+	background: -ms-linear-gradient(to left, red,yellow);/*microsoft*/
+	background: -webkit-linear-gradient(to left, red,yellow);/*Safari*/
+    background: linear-gradient(to left, red,yellow);
+}
+#tres
+{
+	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
+	/*El to right indica que termina a la derecha y toma los colores en el orden seleccionado o sea empieza en rojo y temina en amarillo*/
+	background: -o-linear-gradient(to right, red,yellow);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(to right, red,yellow);/*firefox*/
+	background: -ms-linear-gradient(to right, red,yellow);/*microsoft*/
+	background: -webkit-linear-gradient(to right, red,yellow);/*Safari*/
+    background: linear-gradient(to right, red,yellow);
+}
+#cuatro
+{
+	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
+	/*El to right bottom indica que termina a la derecha y abajo (diagonal), y toma los colores en el orden seleccionado
+	o sea empieza en rojo y temina en amarillo*/
+	background: -o-linear-gradient(to right bottom, red,yellow);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(to right bottom, red,yellow);/*firefox*/
+	background: -ms-linear-gradient(to right bottom, red,yellow);/*microsoft*/
+	background: -webkit-linear-gradient(to right bottom, red,yellow);/*Safari*/
+    background: linear-gradient(to right bottom, red,yellow);
+}
+#cinco
+{
+	background: red; /*Siempre poner un color base por si no se soporta el grabiente*/
+	/*El to left indica que termina a la izquierda y toma los colores en el orden seleccionado*/
+	background: -o-linear-gradient(to left bottom, red,yellow);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(to left bottom, red,yellow);/*firefox*/
+	background: -ms-linear-gradient(to left bottom, red,yellow);/*microsoft*/
+	background: -webkit-linear-gradient(to left bottom, red,yellow);/*Safari*/
+    background: linear-gradient(to left bottom, red,yellow);
+}
+#cinco1
+{
+	background: red;
+	background: -o-linear-gradient(to left bottom, red,yellow,blue);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(to left bottom, red,yellow,blue);/*firefox*/
+	background: -ms-linear-gradient(to left bottom, red,yellow,blue);/*microsoft*/
+	background: -webkit-linear-gradient(to left bottom, red,yellow,blue);/*Safari*/
+    background: linear-gradient(to left bottom, red,yellow,blue);
+}
+#seis
+{
+	/*de 90 grados*/
+	background: red;
+	background: -o-linear-gradient(to left bottom, red,yellow,blue);/*Ponemos predeterminados para cada navegador Opera*/
+	background: -moz-linear-gradient(to left bottom, red,yellow,blue);/*firefox*/
+	background: -ms-linear-gradient(to left bottom, red,yellow,blue);/*microsoft*/
+	background: -webkit-linear-gradient(to left bottom, red,yellow,blue);/*Safari*/
+    background: linear-gradient(to left bottom, red,yellow,blue);
+}
+.texto
+{	
+	position: relative;
+	top: 15px;
+
+}
