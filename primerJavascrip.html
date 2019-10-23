@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>javascrip</title>
+	<script>
+		function suma()
+		{
+			var ope1 = document.getElementById('operando1').value
+			
+			var ope2 = document.getElementById('operando2').value
+			//DOM=Document Object Model
+			document.getElementById('resultado').innerHTML=eval(ope1 + "+" +ope2);
+			//En el id "resultado"y se le da con el innerHTML
+						//eval evalua calcula cualquier exprecion matematica en string
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="operando1">
+	<input type="text" id="operando2">
+	<span id="resultado"></span>
+	<button onClick =" suma() ">suma</button> //Click debe ser con mayuscula
+
+</body>
+</html>
